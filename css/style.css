@@ -1,0 +1,93 @@
+body {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  background-color: #222;
+  font-family: "Source Code Pro", "Courier New", Courier, monospace;
+}
+
+.name {
+  font-size: 100px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.typed_wrap {
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.typed {
+  position: absolute;
+  font-size: medium;
+  color: aliceblue;
+}
+
+.typed::after {
+  content: "|";
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor {
+  opacity: 0;
+  display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
