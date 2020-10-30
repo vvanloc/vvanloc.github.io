@@ -1,5 +1,5 @@
 var type = new Typed(".typed", {
-  strings: ["A student with a passion for AI / ML.", "Let me show you what I can do ❤️"],
+  strings: ["bla bla bla", "nothing here :)"],
   stringsElement: null,
   // typing speed
   typeSpeed: 50,
